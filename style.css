@@ -175,6 +175,56 @@ section h2 {
   font-style: italic;
 }
 
+/* ---------- Badges (R&R, JMP) ---------- */
+.paper-badges {
+  margin: 0.3rem 0 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.6rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.badge-rr {
+  background: #8a1538;
+  color: #fff;
+}
+
+.badge-rr-soft {
+  background: #c47a8c;
+  color: #fff;
+}
+
+.badge-jmp {
+  background: #2c5f2d;
+  color: #fff;
+}
+
+/* ---------- CV sub-detail & prose blocks ---------- */
+.cv-sub {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.82rem;
+  color: #6a6a6a;
+  margin-top: 0.15rem;
+}
+
+.cv-prose {
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.7;
+}
+
 .paper-links {
   font-family: 'Inter', sans-serif;
   font-size: 0.88rem;
@@ -192,13 +242,19 @@ section h2 {
   display: grid;
   grid-template-columns: 110px 1fr;
   gap: 1rem;
-  padding: 0.4rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px dotted #e8e6e0;
+  align-items: start;
 }
 .cv-date {
   font-family: 'Inter', sans-serif;
   font-size: 0.88rem;
   color: #6a6a6a;
+  font-weight: 500;
+  padding-top: 0.1rem;
+}
+.cv-item {
+  line-height: 1.5;
 }
 
 /* ---------- Footer ---------- */
