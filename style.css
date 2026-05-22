@@ -232,6 +232,56 @@ section h2 {
 }
 .paper-links a { margin-right: 0.8rem; }
 
+/* ---------- Foldable abstract ---------- */
+.abstract-toggle {
+  margin: 0.6rem 0;
+}
+.abstract-toggle summary {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #8a1538;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  list-style: none;
+  padding: 0.15rem 0;
+}
+.abstract-toggle summary::-webkit-details-marker {
+  display: none;
+}
+.abstract-toggle summary::marker {
+  display: none;
+  content: "";
+}
+.abstract-toggle summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: transform 0.15s ease;
+  font-size: 0.75rem;
+  color: #8a1538;
+}
+.abstract-toggle[open] summary::before {
+  transform: rotate(90deg);
+}
+.abstract-toggle summary:hover {
+  color: #6b0f2b;
+}
+.abstract-toggle > p {
+  margin: 0.6rem 0 0 0;
+  text-align: justify;
+  hyphens: auto;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: #2c2c2c;
+  padding-left: 1.1rem;
+  border-left: 2px solid #e8e6e0;
+}
+
 /* ---------- CV ---------- */
 .cv-list {
   list-style: none;
