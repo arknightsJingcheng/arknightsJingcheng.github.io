@@ -211,6 +211,12 @@ section h2 {
   color: #fff;
 }
 
+.badge-accepted {
+  background: #0d4f1e;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
 /* ---------- CV sub-detail & prose blocks ---------- */
 .cv-sub {
   display: block;
