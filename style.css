@@ -402,3 +402,16 @@ section h2 {
   .cv-list li { grid-template-columns: 88px 1fr; gap: 0.9rem; }
   .badge { white-space: normal; }
 }
+
+/* "New!" tag beside a paper title */
+.badge-new {
+  background: var(--green-tint);
+  color: var(--green);
+  border-color: var(--green-ring);
+  font-size: 0.68rem;
+  padding: 0.14rem 0.5rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+}
